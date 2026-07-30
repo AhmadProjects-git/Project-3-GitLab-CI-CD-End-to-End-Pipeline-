@@ -2,21 +2,23 @@ stages:
   - test
   - build
 
-# 1. Test Stage
 test_job:
   stage: test
+  tags:
+    - my-runner
   script:
     - echo "=== Starting Continuous Integration Tests ==="
-    - node -v
-    - npm -v
+    - ls -la
+    - test -f index.html && echo "index.html exists!"
 
-# 2. Build Stage
 build_job:
   stage: build
+  tags:
+    - my-runner
   script:
     - echo "=== Building Production Code ==="
-    - npm install
-    - npm run build
+    - mkdir -p dist
+    - cp -r css js index.html dist/ 2>/dev/null || cp index.html dist/
   artifacts:
     paths:
       - dist/
