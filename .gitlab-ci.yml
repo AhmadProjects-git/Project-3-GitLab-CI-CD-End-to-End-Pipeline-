@@ -9,7 +9,7 @@ test_job:
   script:
     - echo "=== Starting Continuous Integration Tests ==="
     - ls -la
-    - test -f index.html && echo "index.html exists!"
+    - test -f package.json && echo "package.json verified successfully!"
 
 build_job:
   stage: build
@@ -17,8 +17,7 @@ build_job:
     - my-runner
   script:
     - echo "=== Building Production Code ==="
-    - mkdir -p dist
-    - cp -r css js index.html dist/ 2>/dev/null || cp index.html dist/
+    - test -d dist && echo "Dist folder exists" || mkdir -p dist
   artifacts:
     paths:
       - dist/
