@@ -1,0 +1,22 @@
+stages:
+  - test
+  - build
+
+# 1. Test Stage
+test_job:
+  stage: test
+  script:
+    - echo "=== Starting Continuous Integration Tests ==="
+    - node -v
+    - npm -v
+
+# 2. Build Stage
+build_job:
+  stage: build
+  script:
+    - echo "=== Building Production Code ==="
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
