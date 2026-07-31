@@ -218,12 +218,14 @@ deploy_job:
 ## 📸 Proof of Execution & Screenshots
 
 ### 1. GitLab 3-Stage Pipeline Success
+All three stages (**Test → Build → Deploy**) executed successfully on the self-hosted runner:
 
-All three stages (**Test $\rightarrow$ Build $\rightarrow$ Deploy**) executed successfully on the self-hosted runner:
+<img width="1366" height="768" alt="pipeline-deploy-success" src="https://github.com/user-attachments/assets/86af26ca-2c76-4f70-a4da-3115e574ae7e" />
 
 ### 2. Live Application Served via Nginx
-
 Web application continuously deployed and running live on the local web server (`http://localhost`):
+
+<img width="1366" height="768" alt="live-nginx-website" src="https://github.com/user-attachments/assets/7ea319c5-14a8-4caf-81b1-da1823a542d4" />
 
 ---
 
