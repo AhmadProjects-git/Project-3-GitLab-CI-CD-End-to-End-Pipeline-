@@ -1,14 +1,14 @@
 stages:
   - test
   - build
+  - deploy
 
 test_job:
   stage: test
   tags:
     - my-runner
   script:
-    - echo "=== Starting Continuous Integration Tests ==="
-    - ls -la
+    - echo "=== Stage 1: Continuous Integration Testing ==="
     - test -f package.json && echo "package.json verified successfully!"
 
 build_job:
@@ -16,8 +16,17 @@ build_job:
   tags:
     - my-runner
   script:
-    - echo "=== Building Production Code ==="
-    - test -d dist && echo "Dist folder exists" || mkdir -p dist
+    - echo "=== Stage 2: Building Application Assets ==="
+    - test -d dist && echo "Dist directory exists" || mkdir -p dist
   artifacts:
     paths:
       - dist/
+
+deploy_job:
+  stage: deploy
+  tags:
+    - my-runner
+  script:
+    - echo "=== Stage 3: Continuous Deployment to Nginx Web Server ==="
+    - cp -r dist/* /var/www/html/
+    - echo "Deployment Successful! Web application is live."
