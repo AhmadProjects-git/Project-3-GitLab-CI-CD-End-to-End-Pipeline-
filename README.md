@@ -227,18 +227,24 @@ Web application continuously deployed and running live on the local web server (
 
 <img width="1366" height="768" alt="live-nginx-website" src="https://github.com/user-attachments/assets/7ea319c5-14a8-4caf-81b1-da1823a542d4" />
 
+
 ---
+
+## 👨‍💻 Author & Profile
+
+<div align="center">
+
+### **Ahmad Hassan**  
+*DevOps & Cloud Infrastructure Engineer*
+
+[![GitLab](https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ahmadhassanofficala)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AhmadProjects-git)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+
 ---
+*Automating Infrastructure | Building Scalable CI/CD Pipelines | Cloud Security*
 
-## 👤 Maintainer Profile
-
-| Detail | Info |
-| :--- | :--- |
-| **Author** | **Ahmad Hassan** |
-| **Role** | DevOps & Cloud Engineer |
-| **Specialization** | CI/CD Automation, Linux System Administration, Cloud Infrastructure |
-| **Project Repo** | [GitLab Workspace](https://gitlab.com/ahmadhassanofficala/project-3-gitlab-pipeline) |
-
+</div>
 ---
 
 ```
