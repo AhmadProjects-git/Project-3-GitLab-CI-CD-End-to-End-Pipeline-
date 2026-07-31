@@ -228,13 +228,17 @@ Web application continuously deployed and running live on the local web server (
 <img width="1366" height="768" alt="live-nginx-website" src="https://github.com/user-attachments/assets/7ea319c5-14a8-4caf-81b1-da1823a542d4" />
 
 ---
+---
 
-## 👤 Author
+## 👤 Maintainer Profile
 
-**AHMAD HASSAN**
+| Detail | Info |
+| :--- | :--- |
+| **Author** | **Ahmad Hassan** |
+| **Role** | DevOps & Cloud Engineer |
+| **Specialization** | CI/CD Automation, Linux System Administration, Cloud Infrastructure |
+| **Project Repo** | [GitLab Workspace](https://gitlab.com/ahmadhassanofficala/project-3-gitlab-pipeline) |
 
-*DevOps & Cloud Engineer*
-
-```
+---
 
 ```
